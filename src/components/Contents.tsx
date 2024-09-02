@@ -5,8 +5,6 @@ import { useExampleStore } from "@/stores"
 const Contents: React.FC = () => {
   const techs = useExampleStore((s) => s.techs)
 
-  console.log("[yijie]", window.WeixinJSBridge)
-
   return (
     <div className="px-6 pb-8">
       {Object.entries(techs).map(([key, value]) => (
